@@ -7,6 +7,9 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
             'header': {
                 templateUrl: "partials/header.html",
             },
+            'welcome': {
+                templateUrl: "partials/welcome.html",
+            },
         }
     });
 });
