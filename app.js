@@ -17,11 +17,15 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
     });
 
     $stateProvider.state('reviews', {
-        url: "reviews",
+        url: "/reviews",
         views: {
             'header': {
                 templateUrl: "partials/header.html",
             },
+            'list': {
+                templateUrl: "partials/list.html",
+                controller: "MoviesCtrl"
+            }
         }
-    })
+    });
 });
