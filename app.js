@@ -10,6 +10,18 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
             'welcome': {
                 templateUrl: "partials/welcome.html",
             },
+            'list': {
+                templateUrl: "partials/list.html",
+            },
         }
     });
+
+    $stateProvider.state('reviews', {
+        url: "reviews",
+        views: {
+            'header': {
+                templateUrl: "partials/header.html",
+            },
+        }
+    })
 });
