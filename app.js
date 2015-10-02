@@ -25,6 +25,10 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
             'list': {
                 templateUrl: "partials/list.html",
                 controller: "MoviesCtrl"
+            },
+            'reviews': {
+                templateUrl: "partials/reviews.html",
+                controller: "MoviesCtrl"
             }
         }
     });
