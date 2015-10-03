@@ -9,10 +9,10 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
             },
             'welcome': {
                 templateUrl: "partials/welcome.html",
-            },
-            'list': {
-                templateUrl: "partials/list.html",
-            },
+            }
+            // 'list': {
+            //     templateUrl: "partials/list.html",
+            // },
         }
     });
 
@@ -24,12 +24,12 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
             },
             'list': {
                 templateUrl: "partials/list.html",
-                controller: "MoviesCtrl"
+                controller: "ReviewsCtrl"
             },
-            'reviews': {
-                templateUrl: "partials/reviews.html",
-                controller: "MoviesCtrl"
-            }
+            // 'reviews': {
+            //     templateUrl: "partials/reviews.html",
+            //     controller: "ReviewsCtrl"
+            // }
         }
     });
 });
