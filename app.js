@@ -9,27 +9,27 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
             },
             'welcome': {
                 templateUrl: "partials/welcome.html",
-            }
+            },
             // 'list': {
             //     templateUrl: "partials/list.html",
             // },
         }
     });
 
-    $stateProvider.state('reviews', {
-        url: "/reviews",
+    $stateProvider.state('movies', {
+        url: "/movies",
         views: {
             'header': {
                 templateUrl: "partials/header.html",
             },
             'list': {
                 templateUrl: "partials/list.html",
-                controller: "ReviewsCtrl"
+                controller: "MoviesCtrl"
             },
-            // 'reviews': {
-            //     templateUrl: "partials/reviews.html",
-            //     controller: "ReviewsCtrl"
-            // }
+                    // 'reviews': {
+                    //     templateUrl: "partials/reviews.html",
+                    //     controller: "ReviewsCtrl"
+                    // }
         }
     });
 });
