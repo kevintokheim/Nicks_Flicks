@@ -1,5 +1,4 @@
-nicksFlicks.controller("ReviewsCtrl", function MoviesCtrl($scope, ReviewsFactory){
-    $scope.reviews = ReviewsFactory.movies;
+nicksFlicks.controller("ReviewsCtrl", function ReviewsCtrl($scope, ReviewsFactory){
+    $scope.reviews = ReviewsFactory.reviews;
     $scope.ReviewsFactory = ReviewsFactory;
-    // $scope.review = UtilitiesFactory.findById(ReviewsFactory.reviews, $stateParams.reviewId);
 });

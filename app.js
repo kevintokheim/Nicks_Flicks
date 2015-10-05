@@ -1,35 +1,28 @@
-var nicksFlicks = angular.module("nicksFlicks", ['ui.router']);
+var nicksFlicks = angular.module('nicksFlicks', ['ui.router']);
 
-nicksFlicks.config(function($stateProvider, $urlRouterProvider){
+nicksFlicks.config(function($stateProvider){
     $stateProvider.state('home', {
-        url: "",
+        url: '',
         views: {
-            'header': {
-                templateUrl: "partials/header.html",
+            'nicks-header': {
+                templateUrl: 'partials/nicks-header.html',
             },
             'welcome': {
-                templateUrl: "partials/welcome.html",
+                templateUrl: 'partials/welcome.html',
             },
-            // 'list': {
-            //     templateUrl: "partials/list.html",
-            // },
         }
     });
 
-    $stateProvider.state('movies', {
-        url: "/movies",
+    $stateProvider.state('reviews', {
+        url: 'reviews',
         views: {
-            'header': {
-                templateUrl: "partials/header.html",
+            'nicks-header': {
+                templateUrl: 'partials/nicks-header.html',
             },
             'list': {
-                templateUrl: "partials/list.html",
-                controller: "MoviesCtrl"
+                templateUrl: 'partials/list.html',
+                controller: 'ReviewsCtrl'
             },
-                    // 'reviews': {
-                    //     templateUrl: "partials/reviews.html",
-                    //     controller: "ReviewsCtrl"
-                    // }
         }
     });
 });

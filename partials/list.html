@@ -1,10 +1,13 @@
-<div class="sidebar-wrapper" ng-show="movies.length">
-    <ul>
-        <li ng-repeat="item in movies">
+<div class="sidebar-wrapper" ng-show="reviews.length">
+    <ul ng-repeat="item in reviews" class="list">
+        <li>
             {{ item.name }}
             <!-- <a ng-click = "reviews({ id: item.id })">{{ item.review }}</a> -->
         </li>
     </ul>
 </div>
-
-<div ui-view="list"></div>
+<div ng-show="!reviews.length">
+    <ul>
+        <li>There are no reviews to show</li>
+    </ul>
+</div>
