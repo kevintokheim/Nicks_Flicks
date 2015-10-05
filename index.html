@@ -14,7 +14,14 @@
         <div class = "container">
             <div ui-view = "nicks-header"></div>
             <div ui-view = "welcome"></div>
-            <div ui-view = "list"></div>
+            <div class = "row">
+                <div class = "col-md-4">
+                    <div ui-view = "list"></div>
+                </div>
+                <div class = "col-md-8">
+                    <div ui-view = "review-section"></div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

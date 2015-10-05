@@ -23,6 +23,10 @@ nicksFlicks.config(function($stateProvider){
                 templateUrl: 'partials/list.html',
                 controller: 'ReviewsCtrl'
             },
+            'review-section': {
+                templateUrl: 'partials/review-section.html',
+                controller: 'ReviewsCtrl'
+            },
         }
     });
 });
