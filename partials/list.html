@@ -1,8 +1,7 @@
 <div class="sidebar-wrapper" ng-show="reviews.length">
     <ul ng-repeat="item in reviews" class="list">
         <li>
-            {{ item.name }}
-            <!-- <a ng-click = "reviews({ id: item.id })">{{ item.review }}</a> -->
+            <a ui-sref="reviews({ reviewId: item.id })">{{ item.name }}</a>
         </li>
     </ul>
 </div>

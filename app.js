@@ -14,7 +14,7 @@ nicksFlicks.config(function($stateProvider){
     });
 
     $stateProvider.state('reviews', {
-        url: 'reviews',
+        url: 'reviews/:reviewId',
         views: {
             'nicks-header': {
                 templateUrl: 'partials/nicks-header.html',
@@ -23,8 +23,8 @@ nicksFlicks.config(function($stateProvider){
                 templateUrl: 'partials/list.html',
                 controller: 'ReviewsCtrl'
             },
-            'review-section': {
-                templateUrl: 'partials/review-section.html',
+            'reviews-section': {
+                templateUrl: 'partials/reviews.description.html',
                 controller: 'ReviewsCtrl'
             },
         }
