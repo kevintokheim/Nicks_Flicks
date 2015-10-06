@@ -8,11 +8,11 @@ nicksFlicks.factory("ReviewsFactory", function ReviewsFactory(){
 
         { name: "The Hobbit Part 4: Return of Smaug Proves that There is No Such Thing as Too Many Hobbit Movies",
         description: "In a word: wow. Who knew that Jackson could pull off yet another Hobbit film, this time instead of just stretching the source material to its most illogical extremes, he just made it up!",
-        id: 3},
+        id: 2},
 
         { name: "Adam: The Story of Adam Sandler is the Masterful Chronicle of One Comedian's Stellar Career",
         description: "Woah, this one was even better than Grown Ups 2.",
-        id: 4},
+        id: 3}
     ];
     return factory;
 });
