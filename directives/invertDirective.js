@@ -1,7 +1,8 @@
-nicksFlicks.directive('changeClass', function(){
+nicksFlicks.directive('invertPage', function(){
     return function(scope, element){
         element.bind('click', function(){
-            element.toggleClass('bg-primary');
+            element.toggleClass('body');
         });
+        // console.log('document.documentElement');
     }
 });
