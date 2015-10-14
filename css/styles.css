@@ -1,4 +1,5 @@
-body {
+.night {
     -webkit-filter: invert(100%);
     filter: invert(100%);
+    background-color:black;
 }
