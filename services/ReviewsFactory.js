@@ -14,5 +14,11 @@ nicksFlicks.factory("ReviewsFactory", function ReviewsFactory(){
         description: "Woah, this one was even better than Grown Ups 2.",
         id: 3}
     ];
+
+    factory.addReview = function(){
+      factory.reviews.push({ name: factory.reviewName, desciption: descriptionText, id: factory.reviews.length + 1});
+      factory.reviewName = null;
+    }
+
     return factory;
 });
