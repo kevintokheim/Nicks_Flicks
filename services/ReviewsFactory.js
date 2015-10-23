@@ -16,9 +16,11 @@ nicksFlicks.factory("ReviewsFactory", function ReviewsFactory(){
     ];
 
     factory.addReview = function(){
-      factory.reviews.push({ name: factory.reviewName, desciption: descriptionText, id: factory.reviews.length + 1});
+      factory.reviews.push({ name: factory.reviewName, desciption: factory.descriptionText, id: factory.reviews.length + 1});
       factory.reviewName = null;
+      console.log(factory);
     }
+
 
     return factory;
 });

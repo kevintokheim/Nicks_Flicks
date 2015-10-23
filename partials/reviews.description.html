@@ -1,5 +1,6 @@
 <h3>Click on a link to the left to see a review!</h3>
-<div class="text-center" ng-show="review.description">
-  <h4>{{ review.name }}</h4>
+<div class="text-center" ng-show="review.description || review.descriptionText">
+  <h4>{{ review.name }} {{ review.factory.reviewName }}</h4>
     {{ review.description }}
+    {{ review.descriptionText }}
 </div>
